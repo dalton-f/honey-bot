@@ -6,8 +6,13 @@ module.exports = {
     .setDescription("Provides information about the user."),
 
   async execute(interaction) {
+    const joinedDate =
+      interaction.member.joinedAt.toDateString() +
+      " at " +
+      interaction.member.joinedAt.toLocaleTimeString();
+
     await interaction.reply(
-      `This command was run by ${interaction.user.username}, who joined on ${interaction.member.joinedAt}.`
+      `This command was run by **${interaction.user.globalName}**, who joined on **${joinedDate}**.`
     );
   },
 };
