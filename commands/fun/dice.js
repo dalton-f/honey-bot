@@ -8,6 +8,6 @@ module.exports = {
   async execute(interaction) {
     const roll = Math.floor(Math.random() * 6) + 1;
 
-    await interaction.reply(`:game_die: You rolled a **${roll}!**`);
+    await interaction.reply(`:game_die: You rolled a **${roll}**!`);
   },
 };

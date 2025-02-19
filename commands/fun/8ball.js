@@ -27,7 +27,7 @@ module.exports = {
     const response = responses[Math.floor(Math.random() * responses.length)];
 
     await interaction.reply(
-      `**Question:** ${question}\n**Answer:** ${response}`
+      `**:question: Question:** ${question}\n:bulb: **Answer:** ${response}`
     );
   },
 };
